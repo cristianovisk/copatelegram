@@ -4,8 +4,8 @@ import requests
 import time
 import telepot
 
-telegram=telepot.Bot('424598286:AAEhrDqvZ4owdZBiRVLFNmIfdvWPCxE2iTw')
-destiny='137028624'
+telegram=telepot.Bot('CODE_BOT_TELEGRAM')
+destiny='YOUR_ID_CHAT'
 ultim_jogo=''
 flag=''
 
