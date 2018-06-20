@@ -9,7 +9,7 @@ destiny='CHATID_RECEIVER'
 ultim_jogo=''
 flag=''
 if destiny == 'CHATID_RECEIVER':
-    print ("Change variable 'destiny' and 'telegram' in code.")
+    print ("Change variable 'destiny' with CHATID and 'telegram' with TOKEN_BOT in code.")
     exit()    
 
 #CHECK WEBSERVER COPA ------------------------------------
