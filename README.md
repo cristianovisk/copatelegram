@@ -5,7 +5,7 @@ Is a code simple written in python for you stand updated about the games the wor
 Usability:
 
 Change variable "telegram" by the code secret the your Bot Telegram.
-Change variable "destiny" by the code the destinatary
+Change variable "destiny" by the code the receiver.
 
 Run he with python 2.7 or 3.5.
 
