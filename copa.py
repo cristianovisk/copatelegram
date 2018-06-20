@@ -4,11 +4,10 @@ import requests
 import time
 import telepot
 
-telegram=telepot.Bot('CODE_BOT_TELEGRAM')
-destiny='YOUR_ID_CHAT'
+telegram=telepot.Bot('***REMOVED***')
+destiny='***REMOVED***'
 ultim_jogo=''
 flag=''
-
 #CHECK WEBSERVER COPA ------------------------------------
 def check():
     jogos = requests.get('http://worldcup.sfg.io/matches').json()
@@ -21,9 +20,16 @@ def check():
                    jogo['away_team']['country'],
                    jogo['away_team']['goals'])
     return resp;
+
+def flag_check(ultim_jogo):
+    flag=ultim_jogo
+    return flag;
+
 while True:
+    flag=flag_check(ultim_jogo)
     ultim_jogo=(str(check()).replace(',','').replace('(','').replace(')','').replace("'",""))
-    if flag == ultim_jogo:
+
+    if flag != ultim_jogo:
     	print ("Goool!!!")
     	print (ultim_jogo)
         telegram.sendMessage(destiny, ultim_jogo, disable_web_page_preview=True)
