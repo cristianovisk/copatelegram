@@ -4,8 +4,8 @@ import requests
 import time
 import telepot
 
-telegram=telepot.Bot('***REMOVED***')
-destiny='***REMOVED***'
+telegram=telepot.Bot('CODE_BOT_TELEGRAM')
+destiny='YOUR_ID_CHAT'
 ultim_jogo=''
 flag=''
 
