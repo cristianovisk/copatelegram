@@ -28,6 +28,7 @@ def flag_check(ultim_jogo):
 while True:
     flag=flag_check(ultim_jogo)
     ultim_jogo=(str(check()).decode('utf-8').replace(',','').replace('(','').replace(')','').replace("'","").replace('x u', 'x '))
+    ultim_jogo=("xs %s" %ultim_jogo).replace('xs u', '')
 
     if flag != ultim_jogo:
     	print ("Goool!!!")
