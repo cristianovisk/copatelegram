@@ -8,6 +8,10 @@ telegram=telepot.Bot('TOKEN_BOT_TELEGRAM')
 destiny='CHATID_RECEIVER'
 ultim_jogo=''
 flag=''
+if destiny == 'CHATID_RECEIVER':
+    print ("Change variable 'destiny' and 'telegram' in code.")
+    exit()    
+
 #CHECK WEBSERVER COPA ------------------------------------
 def check():
     jogos = requests.get('http://worldcup.sfg.io/matches').json()
