@@ -14,7 +14,7 @@ Install
 
 Execute commands:
 "git clone https://github.com/cristianovisk/copatelegram"
-"pip install requeriments.txt"
+"pip install -r requeriments.txt"
 "python copa.py&"
 
 Doubts, speak with me in LinkedIn
