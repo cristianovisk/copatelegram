@@ -8,9 +8,11 @@ telegram=telepot.Bot('TOKEN_BOT_TELEGRAM')
 destiny='CHATID_RECEIVER'
 ultim_jogo=''
 flag=''
+tr=Translator()
 if destiny == 'CHATID_RECEIVER':
     print ("Change variable 'destiny' with CHATID and 'telegram' with TOKEN_BOT in code.")
     exit()    
+
 
 #CHECK WEBSERVER COPA ------------------------------------
 def check():
@@ -37,7 +39,7 @@ while True:
     if flag != ultim_jogo:
     	print ("Goool!!!")
     	print (ultim_jogo)
-        telegram.sendMessage(destiny, ultim_jogo, disable_web_page_preview=True)
+        telegram.sendMessage(destiny, tr.translate(ultim_jogo, src='en', dest='pt').text, disable_web_page_preview=True)
     else:
     	print ("Nothing... Sleep 15...")
     	print (ultim_jogo)
