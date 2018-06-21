@@ -3,6 +3,7 @@
 import requests
 import time
 import telepot
+from googletrans import Translator()
 
 telegram=telepot.Bot('TOKEN_BOT_TELEGRAM')
 destiny='CHATID_RECEIVER'
